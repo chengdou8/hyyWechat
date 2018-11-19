@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>嗨丫丫会员信息</title>
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <link rel="stylesheet" type="text/css" href="./css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="./css/aui-base.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body>
+  <header class="aui-bar aui-bar-nav header">
+    <a class="aui-btn aui-pull-left">
+      <span class="aui-iconfont aui-icon-left"></span>
+    </a>
+    <div class="aui-title">修改信息</div>
+    <span class="icon_more"></span>
+  </header>
+  <div class="aui-content">
+      <div class="pad075">
+        <ul class="aui-list aui-form-list">
+          <li class="aui-list-item">
+              <div class="aui-list-item-inner fs7">
+                  <div class="aui-list-item-label">姓　名：</div>
+                  <div class="aui-list-item-input">
+                    <input type="text" class="fs7" name="real_name" value="" placeholder="王有道">
+                  </div>
+              </div>
+          </li>
+          <li class="aui-list-item">
+              <div class="aui-list-item-inner fs7">
+                  <div class="aui-list-item-label">性　别：</div>
+                  <div class="aui-list-item-input">
+                    <label class="marr05 fs7"><input class="aui-radio" type="radio" name="sex" checked=""> 男</label>
+                    <label class="fs7"><input class="aui-radio" type="radio" name="sex"> 女</label>
+                  </div>
+              </div>
+          </li>
+          <li class="aui-list-item">
+              <div class="aui-list-item-inner fs7">
+                  <div class="aui-list-item-label">生　日：</div>
+                  <div class="aui-list-item-input">
+                    <input type="text" class="fs7" name="birth" id="birth" data-options='{"type":"date","beginYear":1949,"endYear":2010}' value="2011-10-31" onclick="dtpicker(this)" readonly>
+                  </div>
+              </div>
+          </li>
+        </ul>
+
+        <div class="aui-action mart075">
+          <input type="submit" class="aui-btn aui-btn-warning aui-btn-block" name="submit" id="next" value="保存" />
+        </div>
+      </div>
+  </div>
+</body>
+</html>
